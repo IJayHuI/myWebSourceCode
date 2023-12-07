@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 背景高斯模糊+变暗 */
+.message,
+.indexText,
+.message_other,
+.pcNav,
+.bottom,
+.mobileNav,
+.navBtn:active,
+.switchBtn:active,
+.logBox,
+h3,
+span select,
+input,
+textarea,
+.to_am {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 这些元素需要水平垂直居中 */
+.message,
+.message_other,
+.introduction,
+.pcNav,
+.navBtn,
+.icon,
+.mobileNav,
+.switchBtn,
+.mobileNavContent,
+.logBox,
+.date,
+.to_am {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+.top {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left {
+  width: 16vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  margin-left: -8vw;
+  width: 92vw;
+  height: 95vh;
+  overflow: scroll;
+}
+
+.rightBox {
+  margin: 2.2vh 0 0 2vw;
+}
+
+.h1Icon {
+  width: 40px;
+  margin-right: 1vw;
+}
+
+.bottom {
+  width: 100vw;
+  height: 5vh;
+  font-size: 1vw;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1vw;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  width: max-content;
+  padding: 1vw;
+  font-size: 18px;
+  border-radius: 1vw;
+  font-weight: 400;
+}
+
+.messageBox {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  width: 300px;
+  padding: 1.5vw;
+  border-radius: 1vw;
+  font-size: 18px;
+  transition: 0.3s;
+  margin: 0 20px 10px 0;
+}
+
+@media screen and (min-width: 601px) {
+
+  /* 设定有交互属性的元素的样式 */
+  .message:hover,
+  .navBtn:hover,
+  .logBox:hover,
+  .message_other:hover,
+  .to_am:hover {
+    transform: scale(1.035);
+    box-shadow: 0 0 15px white;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .message:active,
+  .navBtn:active,
+  .logBox:active,
+  .to_am:active,
+  .message_other:active {
+    transform: scale(1);
+    box-shadow: 0 0 10px white;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* 小屏幕样式 */
+  .top {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    width: 100vw;
+    height: 5vh;
+    margin-bottom: 1vh;
+    justify-content: center;
+  }
+
+  .right {
+    margin-left: 0;
+    width: 100vw;
+    height: 88vh;
+    margin-bottom: 1vh;
+  }
+
+  .rightBox {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bottom {
+    width: 100vw;
+    height: 5vh;
+    font-size: 1.5vh;
+  }
+
+  h3 {
+    font-size: 16px;
+    border-radius: 1vh;
+  }
+
+  .h1Icon {
+    margin-right: 2vh;
+  }
+
+  .messageBox {
+    justify-content: center;
+  }
+
+  .message {
+    width: 70vw;
+    height: 5vh;
+    padding: 1.5vh;
+    border-radius: 1.5vh;
+    font-size: 2vh;
+    margin: 0 0 1.5vh 0;
+  }
+
+  .message:active,
+  .navBtn:active,
+  .logBox:active,
+  .to_am:active,
+  .message_other:active {
+    transform: scale(0.95);
+    background-color: black;
+    box-shadow: 0 0 10px white;
+  }
+}
