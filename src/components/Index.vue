@@ -36,7 +36,6 @@ const startCarousel = () => {
 
 const updateText = () => {
     if (currentText.value.length < texts[currentIndex.value].length) {
-        console.log(texts[2].length)
         currentText.value = texts[currentIndex.value].substring(
             0,
             currentText.value.length + 1
@@ -89,6 +88,10 @@ const nextText = () => {
     border-radius: 50%;
     padding: 0.5vw;
     margin: 0;
+}
+
+img {
+    user-select: none;
 }
 
 @media screen and (max-width: 600px) {
