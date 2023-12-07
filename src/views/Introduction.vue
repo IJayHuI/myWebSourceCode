@@ -55,7 +55,7 @@ for (let i = 0; i < like_geshou.length; i++) {
 </style>
 <style scoped>
 .Introduction {
-    width: 94vw;
+    width: 92vw;
     height: max-content;
     display: flex;
     align-items: center;
