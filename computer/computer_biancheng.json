@@ -1,0 +1,22 @@
+[
+    {
+        "name": "菜鸟教程",
+        "link": "https://www.runoob.com/"
+    },
+    {
+        "name": "MDN Web Docs",
+        "link": "https://developer.mozilla.org/zh-CN/"
+    },
+    {
+        "name": "Python Full Course for Beginners——YouTube 🔴",
+        "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc&feature=youtu.be"
+    },
+    {
+        "name": "Python Full Course for Beginners——BiliBili",
+        "link": "https://www.bilibili.com/video/BV1ng4y1i7Uk/"
+    },
+    {
+        "name": "Vue.js",
+        "link": "https://cn.vuejs.org/"
+    }
+]

@@ -1,8 +1,6 @@
 <template>
     <div class="rightBox">
         <h1><img class="h1Icon" src="../../public/icons/navigates/person.svg">联系我</h1>
-        <h2>电话</h2>
-        <h3 class="phone">电话就不外漏了哦</h3>
         <h2>邮箱</h2>
         <div class="messageBox">
             <a class="message" href="mailto:hujie20050609@icloud.com">hujie20050609@icloud.com</a>
@@ -10,8 +8,8 @@
             <a class="message" href="mailto:2949763264@qq.com">2949763264@qq.com</a>
         </div>
         <h2>其他</h2>
-        <div class="messageBox">
-            <a class="message_other" href="https://github.com/IJayHuI" target="_blank">
+        <div class="messageBox other">
+            <a class=" message_other" href="https://github.com/IJayHuI" target="_blank">
                 <img class="connectIcon" src="../../public/icons/github.png" alt="Telegram">
             </a>
             <a class="message_other" href="https://t.me/Jay_Hu" target="_blank"><img class="connectIcon"
@@ -24,30 +22,20 @@
         <h3>请勿通过上述联系方式作出恶意行为</h3>
     </div>
 </template>
-
-<script setup></script>
-
 <style scoped>
 h3 {
     color: red;
 }
 
-.phone {
-    color: white;
-}
-
 .connectIcon {
-    width: 2vw;
-    height: 2vw;
+    width: 30px;
 }
 
 .message_other {
-    width: 2vw;
-    padding: 1.5vw;
+    /* width: 2vw; */
+    padding: 1vw;
     border-radius: 1vw;
-    font-size: 1.3vw;
-    transition: 0.3s;
-    margin: 0 10px 1.5vh;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,6 +48,11 @@ h3 {
         width: 6vh;
         height: 6vh;
         border-radius: 1.5vh;
+    }
+
+    .other {
+        grid-template-columns: repeat(4, 75px);
+        justify-content: center;
     }
 }
 </style>

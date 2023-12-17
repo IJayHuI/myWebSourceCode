@@ -1,10 +1,12 @@
 <template>
     <div class="rightBox">
         <h1><img class="h1Icon" src="../../public/icons/navigates/logs.svg">日志</h1>
-        <div class="logBox" v-for="log in Logs">
-            <div class="date">{{ log.date }}</div>
-            <div class="log">
-                <div class="logContent" v-for="content in log.text">{{ content }}</div>
+        <div class="messageBox">
+            <div class="logBox" v-for="log in Logs">
+                <div class="date">{{ log.date }}</div>
+                <div class="log">
+                    <div class="logContent" v-for="content in log.text">{{ content }}</div>
+                </div>
             </div>
         </div>
     </div>
@@ -13,17 +15,21 @@
 import Logs from "../../public/log.json";
 </script>
 <style scoped>
+.messageBox {
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 2fr));
+}
+
 .logBox {
     border-radius: 1vw;
-    width: 60vw;
-    margin-bottom: 1vw;
     transition: 0.3s;
 }
 
 .date {
     width: 30%;
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .log {
@@ -35,17 +41,14 @@ import Logs from "../../public/log.json";
     margin: 1vw 0 1vw 0;
 }
 
-/* @media screen and (min-width: 601px) {
-    .logBox:hover {
-        transform: scale(1.04);
-    }
-} */
-
 @media screen and (max-width: 600px) {
+    .messageBox {
+        grid-template-columns: 1fr;
+    }
+
     .logBox {
-        width: 90dvw;
+        width: 90vw;
         border-radius: 1.5vh;
-        margin-bottom: 1vh;
         flex-direction: column;
     }
 

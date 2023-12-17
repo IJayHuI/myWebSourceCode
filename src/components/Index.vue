@@ -1,10 +1,10 @@
 <template>
     <div class="heading">
-        <img src="../../public/heading.jpg" alt="头像" />
+        <img src="../../public/headingIcon.png" alt="头像" />
     </div>
     <div class="introduction">
         <p class="indexText">{{ currentText }}</p>
-        <div class="message" @click="nextText"><img src="../../public/icons/index/next.svg" alt="下一个"></div>
+        <div class="refresh" @click="nextText"><img src="../../public/icons/index/next.svg" alt="下一个"></div>
     </div>
 </template>
 
@@ -82,16 +82,13 @@ const nextText = () => {
     overflow: hidden;
 }
 
-.message {
+.refresh {
     width: 3.5vw;
     height: 3.5vw;
     border-radius: 50%;
     padding: 0.5vw;
     margin: 0;
-}
-
-img {
-    user-select: none;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -120,7 +117,7 @@ img {
         height: 38vh;
     }
 
-    .message {
+    .refresh {
         width: 5vh;
         height: 5vh;
         padding: 0.5vh;

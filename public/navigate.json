@@ -1,7 +1,7 @@
 [
     {
         "icon": "./icons/navigates/house.svg",
-        "name": "主页",
+        "name": "首页",
         "path": "/"
     },
     {

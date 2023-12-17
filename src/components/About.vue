@@ -30,6 +30,8 @@
 </template>
 <style scoped>
 .messageBox {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 1vw;
 }
@@ -39,13 +41,11 @@ p {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1vw;
     padding: 1vw;
-    margin: 0 20px 10px 0;
     font-size: 1.3vw;
 }
 
 .message {
     min-width: max-content;
-    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,10 +60,6 @@ p {
         font-size: 2vh;
         width: 80vw;
         text-align: center;
-    }
-
-    .message {
-        margin-top: 1vh;
     }
 }
 </style>

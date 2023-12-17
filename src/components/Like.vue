@@ -7,10 +7,12 @@
                 l_geshou.name }}
             </router-link>
         </div>
+        <h3>点击进入歌手的详情页</h3>
         <h2>游戏</h2>
         <div class="messageBox">
             <a target="_blank" :href=l_youxi.link class="message" v-for="l_youxi in like_youxi">{{ l_youxi.name }}</a>
         </div>
+        <h3>点击直接进入对应的官网</h3>
         <h3>这是我平时常听的歌手以及我喜欢的游戏</h3>
     </div>
 </template>
@@ -19,5 +21,3 @@
 import like_geshou from "../../public/like/like_geshou.json"
 import like_youxi from "../../public/like/like_youxi.json"
 </script>
-
-<style scoped></style>

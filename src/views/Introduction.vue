@@ -2,7 +2,7 @@
     <div class="Introduction">
         <img class="max_img" :src=max_img alt="歌手图片" width="100%" />
         <h1> {{ artist }} </h1>
-        <div class="introduction" v-html="introduction"></div>
+        <div class="introductionTxt" v-html="introduction"></div>
         <div class="player">
             <img class="album" :src=album alt="专辑图片">
             <div class="player_right">
@@ -36,7 +36,7 @@ for (let i = 0; i < like_geshou.length; i++) {
 </script>
 
 <style>
-.introduction p {
+.introductionTxt p {
     margin-bottom: 1vw;
     line-height: 1.9;
     font-size: 18px;
@@ -69,23 +69,18 @@ for (let i = 0; i < like_geshou.length; i++) {
     border-radius: 0 0 1vw 1vw;
 }
 
-.introduction {
+.introductionTxt {
     padding: 2vw 1vw 1vw 1vw;
     color: white;
     width: 80vw;
-    height: max-content;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1vw;
-    backdrop-filter: blur(5px);
     margin-top: 5vw;
 }
 
 .player {
     width: 60vw;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1vw;
-    backdrop-filter: blur(5px);
     padding: 1vw;
     display: flex;
     margin-top: 2vw;

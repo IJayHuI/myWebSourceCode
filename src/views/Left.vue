@@ -3,7 +3,7 @@
         <div class="pcNav pcNavClose" ref="switchHover" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
             <span>
                 <div class="navBtn navBtnClose">
-                    <span class="icon"><img class="heading" src="../../public/heading.jpg" alt="头像"></span>
+                    <span class="icon"><img class="heading" src="../../public/headingIcon.png" alt="头像"></span>
                     <p>Hello</p>
                 </div>
             </span>
@@ -85,22 +85,19 @@ const routerBtnClick = () => {
 
     .pcNav {
         width: 14vw;
-        height: max-content;
         max-height: 93vh;
         margin: 1vw;
+        position: fixed;
         flex-direction: column;
         justify-content: flex-start;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        border-radius: 1.5vw;
+        overflow: hidden scroll;
+        border-radius: 3vw;
         z-index: 1;
         transition: width 0.3s, border-radius 0.3s, z-index 0.3s ease;
-        ;
     }
 
     .pcNavClose {
         width: 6vw;
-        z-index: 0;
     }
 
     .pcNav * {
@@ -112,18 +109,17 @@ const routerBtnClick = () => {
         margin: 1vw 0;
         width: 12vw;
         height: 4vw;
-        border-radius: 1vw;
+        border-radius: 10vw;
+        overflow: hidden;
         justify-content: flex-start;
     }
 
     .navBtnClose {
         width: 4vw;
-        height: 4vw;
     }
 
     .icon {
         width: 4vw;
-        height: 4vw;
         margin-right: 1vw;
         position: absolute;
     }
