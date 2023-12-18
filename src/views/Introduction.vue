@@ -66,7 +66,7 @@ for (let i = 0; i < like_geshou.length; i++) {
 
 .max_img {
     width: 100%;
-    border-radius: 0 0 1vw 1vw;
+    border-radius: 0 0 25px 25px;
 }
 
 .introductionTxt {
@@ -74,13 +74,13 @@ for (let i = 0; i < like_geshou.length; i++) {
     color: white;
     width: 80vw;
     flex-direction: column;
-    border-radius: 1vw;
+    border-radius: 15px;
     margin-top: 5vw;
 }
 
 .player {
     width: 60vw;
-    border-radius: 1vw;
+    border-radius: 15px;
     padding: 1vw;
     display: flex;
     margin-top: 2vw;
@@ -101,13 +101,13 @@ h2 {
 
 .album {
     width: 20vw;
-    border-radius: 1vw;
+    border-radius: 15px;
 }
 
 .to_am {
     width: 30vw;
     height: 5vw;
-    border-radius: 1vw;
+    border-radius: 15px;
     font-size: 1.5vw;
     margin-top: 2vw;
     transition: 0.3s;

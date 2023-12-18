@@ -10,6 +10,11 @@
             <a target="_blank" class="message" v-for="c_jisuanji in computer_jisuanji" :href="c_jisuanji.link"> {{
                 c_jisuanji.name }}</a>
         </div>
+        <h2>实用网页</h2>
+        <div class="messageBox">
+            <a target="_blank" class="message" v-for="c_shiyongweb in computer_shiyongweb" :href="c_shiyongweb.link"> {{
+                c_shiyongweb.name }}</a>
+        </div>
         <h2>软件</h2>
         <div class="messageBox">
             <a target="_blank" class="message" v-for="c_ruanjian in computer_ruanjian" :href="c_ruanjian.link"> {{
@@ -19,11 +24,6 @@
         <div class="messageBox">
             <a target="_blank" class="message" v-for="c_biancheng in computer_biancheng" :href="c_biancheng.link"> {{
                 c_biancheng.name }}</a>
-        </div>
-        <h2>实用网页</h2>
-        <div class="messageBox">
-            <a target="_blank" class="message" v-for="c_shiyongweb in computer_shiyongweb" :href="c_shiyongweb.link"> {{
-                c_shiyongweb.name }}</a>
         </div>
         <h3>本页内容会有增加删减，移动分类，不定期更新</h3>
         <h3>🔴: You need some magic to visit this web!</h3>

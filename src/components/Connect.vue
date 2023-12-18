@@ -32,9 +32,8 @@ h3 {
 }
 
 .message_other {
-    /* width: 2vw; */
-    padding: 1vw;
-    border-radius: 1vw;
+    padding: 20px;
+    border-radius: 15px;
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -45,6 +44,7 @@ h3 {
     }
 
     .message_other {
+        padding: 10px;
         width: 6vh;
         height: 6vh;
         border-radius: 1.5vh;

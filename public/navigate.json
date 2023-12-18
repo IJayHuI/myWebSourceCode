@@ -1,12 +1,12 @@
 [
     {
         "icon": "./icons/navigates/house.svg",
-        "name": "首页",
+        "name": "首 页",
         "path": "/"
     },
     {
         "icon": "./icons/navigates/heart.svg",
-        "name": "喜欢",
+        "name": "喜 欢",
         "path": "/Like"
     },
     {
@@ -21,12 +21,12 @@
     },
     {
         "icon": "./icons/navigates/logs.svg",
-        "name": "日志",
+        "name": "日 志",
         "path": "/Log"
     },
     {
         "icon": "./icons/navigates/info.svg",
-        "name": "关于",
+        "name": "关 于",
         "path": "/About"
     }
 ]

@@ -27,18 +27,17 @@ import Logs from "../../public/log.json";
 .date {
     width: 30%;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 25px;
     user-select: none;
     -webkit-user-select: none;
 }
 
 .log {
     width: 70%;
-    font-size: 1vw;
 }
 
 .logContent {
-    margin: 1vw 0 1vw 0;
+    margin: 1vw 0;
 }
 
 @media screen and (max-width: 600px) {
