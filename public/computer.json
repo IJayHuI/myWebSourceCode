@@ -1,0 +1,78 @@
+{
+  "2302": {
+    "title": "计算 2302 平台",
+    "website": {
+      "zimeoj": {
+        "name": "ZimeOJ",
+        "address": "https://2023.acm.521207.xyz"
+      },
+      "zjooc": {
+        "name": "浙江省高校开放课程共享平台",
+        "address": "https://www.zjooc.cn/"
+      },
+      "chaoxing": {
+        "name": "学习通（超星）平台",
+        "address": "http://i.chaoxing.com"
+      }
+    }
+  },
+  "webUseful": {
+    "title": "实用网址",
+    "website": {
+      "google": {
+        "name": "Google 🔴",
+        "address": "https://google.com/"
+      },
+      "wikipedia": {
+        "name": "Wikipedia 🔴",
+        "address": "https://www.wikipedia.org/"
+      },
+      "chatgpt": {
+        "name": "ChatGPT 🔴",
+        "address": "https://chat.openai.com/"
+      },
+      "runoob": {
+        "name": "菜鸟教程",
+        "address": "https://www.runoob.com/"
+      },
+      "w3schools": {
+        "name": "W3schools",
+        "address": "https://www.w3schools.cn/"
+      },
+      "mdnWebDocs": {
+        "name": "MDN Web Docs",
+        "address": "https://developer.mozilla.org/zh-CN/"
+      }
+    }
+  },
+  "softWare": {
+    "title": "软件",
+    "website": {
+      "vscode": {
+        "name": "Visual Studio Code",
+        "address": "https://code.visualstudio.com/"
+      },
+      "appstorrent": {
+        "name": "Appstorrent 🔴",
+        "address": "https://appstorrent.ru/"
+      }
+    }
+  },
+  "video": {
+    "title": "视频资源",
+    "website": {
+      "pythonYoutube": {
+        "name": "Python Full Course for Beginners——YouTube 🔴",
+        "address": "https://www.youtube.com/watch?v=_uQrJ0TkZlc&feature=youtu.be"
+      },
+      "pythonBilibili": {
+        "name": "Python Full Course for Beginners——BiliBili",
+        "address": "https://www.bilibili.com/video/BV1ng4y1i7Uk/"
+      },
+      "computerScience": {
+        "name": "计算机科学——Bilibili",
+        "address": "https://www.bilibili.com/video/BV1EW411u7th/"
+      }
+    }
+  }
+}

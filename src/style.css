@@ -39,7 +39,8 @@ h3,
 .logBox,
 .date,
 .to_am,
-.refresh {
+.refresh,
+.heading {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +131,8 @@ h3 {
   .logBox:hover,
   .message_other:hover,
   .to_am:hover,
-  .refresh:hover {
+  .refresh:hover,
+  .heading img:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -191,13 +193,13 @@ h3 {
   }
 }
 
-
 .message:active,
 .navBtn:active,
 .logBox:active,
 .to_am:active,
 .message_other:active,
-.refresh:active {
+.refresh:active,
+.heading img:active {
   transform: scale(0.97);
   box-shadow: 0 0 10px white;
   background-color: black;

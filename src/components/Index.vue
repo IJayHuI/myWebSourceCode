@@ -1,11 +1,13 @@
 <template>
-  <div class="heading">
-    <img src="../../public/headingIcon.png" alt="头像" />
-  </div>
-  <div class="introduction">
-    <p class="indexText">{{ currentText }}</p>
-    <div class="refresh" @click="nextText">
-      <img src="../../public/icons/index/next.svg" alt="下一个" />
+  <div class="rightBox">
+    <div class="heading">
+      <img src="../../public/headingIcon.png" alt="头像" />
+    </div>
+    <div class="introduction">
+      <p class="indexText">{{ currentText }}</p>
+      <div class="refresh" @click="nextText">
+        <img src="../../public/icons/index/next.svg" alt="下一个" />
+      </div>
     </div>
   </div>
 </template>
@@ -63,12 +65,34 @@ const nextText = () => {
 </script>
 
 <style scoped>
-.heading {
-  display: none;
+.rightBox {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.heading,
+.heading img,
+.introduction {
+  width: 50%;
+}
+
+.heading img {
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.heading img:hover {
+  transform: scale(1.1);
+}
+
+.heading img:active {
+  transform: scale(1);
 }
 
 .introduction {
-  height: 100%;
+  margin-left: -10%;
   flex-direction: column;
 }
 
@@ -92,6 +116,12 @@ const nextText = () => {
 }
 
 @media screen and (max-width: 600px) {
+  .rightBox {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
   .indexBox {
     width: 100vw;
     height: 88vh;
@@ -114,7 +144,8 @@ const nextText = () => {
   }
 
   .introduction {
-    height: 38vh;
+    width: 100%;
+    margin-left: 0;
   }
 
   .refresh {
@@ -136,7 +167,7 @@ const nextText = () => {
 
   .heading img:active {
     box-shadow: 0 0 10px white;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 }
 </style>
