@@ -20,11 +20,11 @@ import Logs from "../../public/log.json";
 </script>
 <style scoped>
 .messageBox {
-  grid-template-columns: repeat(auto-fill, minmax(480px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
 }
 
 .logBox {
-  border-radius: 1vw;
+  border-radius: 15px;
   transition: 0.3s;
 }
 
@@ -32,12 +32,14 @@ import Logs from "../../public/log.json";
   width: 30%;
   font-weight: 600;
   font-size: 25px;
+  padding: 5px;
   user-select: none;
   -webkit-user-select: none;
 }
 
 .log {
   width: 70%;
+  padding: 5px;
 }
 
 .logContent {
